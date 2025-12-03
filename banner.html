@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Rights Hub | Защита цифровых прав</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔐</text></svg>">
+</head>
+<body>
+    <div class="cyber-background"></div>
+    
+    <div class="container">
+        <!-- Шапка сайта -->
+        <header class="header">
+            <div class="logo-container">
+                <div class="logo-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>Digital Rights Hub</h1>
+                    <p class="tagline">Защита ваших прав в цифровом пространстве</p>
+                </div>
+            </div>
+            
+        </header>
+
+        <!-- Основной контент -->
+        <main class="main-content">
+            <section class="hero">
+                <h2 class="hero-title">
+                    <span class="gradient-text">Ваши цифровые права</span> под защитой
+                </h2>
+                <p class="hero-description">
+                    В эпоху цифровизации защита персональных данных и цифровых прав становится 
+                    критически важной. Узнайте, как защитить себя и свои данные.
+                </p>
+            </section>
+
+            <!-- Баннеры -->
+            <section class="banners-section">
+                <h2 class="section-title">
+                    <i class="fas fa-bullhorn"></i> Актуальные кампании
+                </h2>
+                <p class="section-subtitle">Присоединяйтесь к важным инициативам по защите цифровых прав</p>
+                
+                <div class="banners-grid">
+                    <!-- Баннер 1 -->
+                    <div class="banner-card" data-aos="fade-up">
+                        <div class="banner-header">
+                        </div>
+                        
+                        <div class="banner-image-container">
+                            <img src="image2.jpeg" alt="Защита цифровой приватности" class="banner-img">
+                            <div class="banner-overlay">
+                                <div class="play-icon">
+                                    <i class="fas fa-play-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="banner-content">
+                            <h3 class="banner-title">Кампания по защите цифровой приватности</h3>
+                            <p class="banner-description">
+                                Присоединяйтесь к всемирной инициативе по усилению защиты персональных данных 
+                                и противодействию массовой слежке в интернете. Более 50 стран уже поддержали.
+                            </p>
+                            
+                        </div>
+                    </div>
+
+                    <!-- Баннер 2 -->
+                    <div class="banner-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="banner-header">
+                        </div>
+                        
+                        <div class="banner-image-container">
+                            <img src="image1.jpeg" alt="Цифровое законодательство" class="banner-img">
+                            <div class="banner-overlay">
+                                <div class="play-icon">
+                                    <i class="fas fa-file-contract"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="banner-content">
+                            <h3 class="banner-title">Реформа цифрового законодательства</h3>
+                            <p class="banner-description">
+                                Общественное обсуждение нового закона о цифровых правах. 
+                                Ваше мнение поможет сформировать современное законодательство, 
+                                защищающее права граждан в интернете.
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Информационный блок -->
+            <section class="info-section">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Что такое цифровые права?</h3>
+                    <p>Цифровые права — это права человека в цифровую эпоху, включая право на приватность, защиту персональных данных, свободу выражения в интернете и доступ к информации.</p>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3>Основные угрозы</h3>
+                    <p>Массовая слежка, утечки персональных данных, цензура, цифровое неравенство и ограничение доступа к информации — основные вызовы цифровой эпохи.</p>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Как защитить себя?</h3>
+                    <p>Используйте шифрование, настройте приватность в соцсетях, изучайте пользовательские соглашения, участвуйте в общественных обсуждениях цифровых законов.</p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Подвал -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Digital Rights Hub</span>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Анимация баннеров при наведении
+        document.addEventListener('DOMContentLoaded', function() {
+            const bannerCards = document.querySelectorAll('.banner-card');
+            
+            bannerCards.forEach(card => {
+                const imgContainer = card.querySelector('.banner-image-container');
+                const img = card.querySelector('.banner-img');
+                const btn = card.querySelector('.banner-btn');
+                
+                // Эффект при наведении на карточку
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-15px) scale(1.02)';
+                    this.style.zIndex = '10';
+                    
+                    // Параллакс эффект для изображения
+                    img.style.transform = 'scale(1.1)';
+                    
+                    // Анимация иконки
+                    const icon = card.querySelector('.play-icon');
+                    icon.style.transform = 'scale(1.2)';
+                    icon.style.opacity = '1';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                    this.style.zIndex = '1';
+                    
+                    // Возврат изображения
+                    img.style.transform = 'scale(1)';
+                    
+                    // Возврат иконки
+                    const icon = card.querySelector('.play-icon');
+                    icon.style.transform = 'scale(1)';
+                });
+                
+                // Анимация кнопки
+                btn.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateX(10px)';
+                });
+                
+                btn.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateX(0)';
+                });
+                
+                // Клик по кнопке
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Анимация нажатия
+                    this.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        this.style.transform = 'scale(1)';
+                    }, 150);
+                    
+                    // В реальном проекте здесь будет переход по ссылке
+                    alert('В реальном проекте здесь будет переход на страницу кампании. Ссылка: ' + this.getAttribute('href'));
+                });
+            });
+            
+            // Плавное появление элементов при загрузке
+            const animatedElements = document.querySelectorAll('.banner-card, .info-card');
+            animatedElements.forEach((el, index) => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                
+                setTimeout(() => {
+                    el.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                    el.style.opacity = '1';
+                    el.style.transform = 'translateY(0)';
+                }, 300 + index * 200);
+            });
+            
+            // Анимация для элементов с data-aos
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+            
+            document.querySelectorAll('[data-aos]').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
